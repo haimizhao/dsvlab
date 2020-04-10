@@ -6,6 +6,8 @@
 
 体验改进：新增网格对齐功能，新增器件标签、悬浮标签，新增电路整体移动按钮，新增部分提示，美术风格统一
 
+![新特性](https://github.com/haimizhao/dsvlab/blob/master/new_feature.png)
+
 # 使用说明
 在原来的基础上作了如下调整：
 
