@@ -56,6 +56,16 @@
         mycircuit.deletecircuit();
     });
 
+    function checkBackground() {
+        if (mycircuit.alignx || mycircuit.aligny) {
+            $("#gridbg").attr("fill", "url(#grid)");
+        } else {
+            $("#gridbg").attr("fill", "none");
+        }
+    }
+
+    $("#gridbg").attr("fill", "none");
+
     $("#aligny").bind("click", function () {
         var imgSrc = $(this).attr("src");
         if (imgSrc == "./img/align_horizontal.png") {
@@ -65,6 +75,7 @@
             $(this).attr("src", "./img/align_horizontal.png");
             mycircuit.aligny = false
         }
+        checkBackground();
     });
 
     $("#alignx").bind("click", function () {
@@ -76,6 +87,7 @@
             $(this).attr("src", "./img/align_vertical.png");
             mycircuit.alignx = false
         }
+        checkBackground();
     });
 
     function adjustLines()
